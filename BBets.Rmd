@@ -105,6 +105,29 @@ BrLw(numClass = 27,odds=2.0,countoDo = 637)
 
 ## We will run BrLw at the given conditions 100 times and get a 95% confidence interval 
 
+```{r}
+fbank=numeric()
+for(j in 1:1000){
+
+fbank[j] = BrLw(numClass = 35, odds=2.0,countoDo = 637)}
+```
+
+```{r}
+hist(fbank)
+t.test(fbank)
+favstats(fbank)
+```
+
+## There are 1000 numbers in the bank - we sort them and take the middle 95%
+
+```{r}
+sortedBank <- sort(fbank)
+low=sortedBank[25]
+high=sortedBank[975]
+```
+
+
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
