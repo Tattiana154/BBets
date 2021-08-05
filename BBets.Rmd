@@ -126,9 +126,10 @@ low=sortedBank[25]
 high=sortedBank[975]
 ```
 
-
+## The interval is 'r low' to 'r high'
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+After conducting multiple sample test and input t.test along with data frames which showed that 382 was the average amount of his earning over the 1000 times the test was conducted. These test had a standard deviation of 29.6. the size of class he should have in order to keep his current scheme at zero profit is 28 as most of the test that were conducted kept him at zero profit. But if he wanted to make sure that he made no profit at all the best bet would be 27 students in his class as the less students there are the less likely there is to have two individuals with the same birthday. 
